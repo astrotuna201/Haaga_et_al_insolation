@@ -16,7 +16,7 @@ The GSL data are found in the `data/` folder. There is one file for each age mod
 ### Preprocessing
 Loading the data used in the paper is done with the `preprocessing/preprocessing.R` script. Running this generates a data table containing all the necessary data for the CCM analyses, which is saved in the file `analysis/compiled_data`.
 
-For details on the preprocessing, check out the source code for the other files in the `preprocessing/` folder. *Note: this might take several hours, depending on your system specs*.
+For details on the preprocessing, check out the source code for the other files in the `preprocessing/` folder. *Note: preprocessing might take several hours, depending on your system specs*.
 
 ### Analyses
 For the analysis, we use CCM wrappers (around the rEDM package implementation) from the `tstools` repository (https://github.com/kahaaga/tstools) that simplifies lagged CCM analyses with surrogate testing. The `tstools` package also contains functions used to estimate embedding dimensions, and to summarise CCM results with associated significance tests.
