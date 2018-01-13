@@ -11,7 +11,7 @@ All R packages required are loaded automatically when you run any of the scripts
 Latitudinal summer energy data was precomputed for a range of summer energy thresholds using the code accompanying *Huybers, Peter. "Early Pleistocene glacial cycles and the integrated summer insolation forcing." Science 313.5786 (2006): 508-511*. These files are located in the `data/Integrated_summer_energy/` folder, and there is one file for each latitude. 
 
 #### Global sea level (GSL)
-The GSL data are found in the `data/` folder. There is one file for each age model. In the manuscript, we focus on the age model with orbitally independent age assignments ('speleoice'). 
+The GSL data are from *Spratt, Rachel M., and Lorraine E. Lisiecki. "A Late Pleistocene sea level stack." Climate of the Past 12.4 (2016): 1079* and are found in the `data/` folder. Spratt and Lisiecki's age assignments for GSL is based on the LR04 stack, which is tuned to an ice model forced by insolation. Here, we have modified the GSL record to age model with orbitally independent age assignments. There is one `.txt` file in the `data/` folder for each age model. In the manuscript, we focus on the age model with orbitally independent age assignments ('speleoice'). 
 
 ### Preprocessing
 Loading the data used in the paper is done with the `preprocessing/preprocessing.R` script. Running this generates a data table containing all the necessary data for the CCM analyses, which is saved in the file `analysis/compiled_data`.
