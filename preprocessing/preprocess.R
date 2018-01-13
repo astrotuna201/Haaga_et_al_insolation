@@ -44,9 +44,9 @@ for (threshold in thresholds) {
       # loaded behind the scenes - the only thing we're doing
       # here are putting them on a common age grid with the
       # resolution we specify).
-      dt = suppressMessages(CompileGlobalClimateData(threshold = threshold, 
-                                                     latitude = latitude,
-                                                     bin.size = bin.size))
+      dt = suppressMessages(compile_data(threshold = threshold, 
+                                         latitude = latitude,
+                                         bin.size = bin.size))
       
       # Add columns with information about temporal resolution, 
       # threshold and latitude (we need to keep track of this when performing
