@@ -50,7 +50,7 @@ LoadSummerEnergy <- function(latitude,
 
 #' Sea surface temperature proxies.
 LoadGSL_LR04 <- function(username = Sys.info()["effective_user"]) {
-  file.path = "data/spratt_lisiecki_RSL.txt"
+  file.path = "data/GSL_LR04.txt"
   dt = read.table(file.path, header = T, sep = "\t", 
                   dec = ".", na.strings = "NaN")
   
@@ -76,7 +76,7 @@ LoadGSL_LR04 <- function(username = Sys.info()["effective_user"]) {
 
 #' Sea surface temperature proxies.
 LoadGSL_speleothem <- function(username = Sys.info()["effective_user"]) {
-  file.path = "data/GSL_speleothem_agemodel.txt"
+  file.path = "data/GSL_speleothem.txt"
   dt = data.table::fread(file.path, skip = 1)
   colnames(dt) = c("Age", "GSLspel")
   dt = dt[complete.cases(dt), ]
@@ -98,7 +98,7 @@ LoadGSL_speleothem <- function(username = Sys.info()["effective_user"]) {
 
 #' Sea surface temperature proxies.
 LoadGSL_speleoice <- function(username = Sys.info()["effective_user"]) {
-  dt = data.table::fread("data/GSL_spratt_on_speleoice_agemodel.txt", 
+  dt = data.table::fread("data/GSL_speleoice.txt", 
                          sep = "\t", dec = ".")[, 2:3]
   colnames(dt) = c("GSLSpeleoIce", "Age")
   dt = dt[, c("Age", "GSLSpeleoIce")]
