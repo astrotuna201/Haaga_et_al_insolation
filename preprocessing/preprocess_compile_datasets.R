@@ -11,12 +11,12 @@ source("preprocessing/preprocess_data_structures.R")
 #'   during days of the year exceeding this threshold.
 #' 
 #' @return A dataframe containing the compiled and gridded dataset.
-CompileGlobalClimateData <- function(latitude,
-                                     threshold,
-                                     bin.size = 1,
-                                     time.sampled.at = "mid",
-                                     start = -0.5,
-                                     end = 800.5) {
+compile_data <- function(latitude,
+                         threshold,
+                         bin.size = 1,
+                         time.sampled.at = "mid",
+                         start = -0.5,
+                         end = 800.5) {
   GSL_speleoice = LoadGSL_speleoice()
   GSL_speleothem = LoadGSL_speleothem()
   GSL_LR04 = LoadGSL_LR04()
