@@ -8,7 +8,7 @@ Loading the data used in the paper is done with the `preprocessing/preprocessing
 ### Analyses
 For the analysis, we use CCM wrappers (around the rEDM package implementation) from the `tstools` repository (https://github.com/kahaaga/tstools) that simplifies lagged CCM analyses with surrogate testing. The `tstools` package also contains functions used to estimate embedding dimensions, and to summarise CCM results with associated significance tests.
 
-All computations have been pre-run and summarised for this repository. To re-run analyses, check the instructions in the `analysis/run_analyses.R` script (note: a cluster of high-performance computers were used; running the analyses on a laptop or workstation computer, depending on your system specs, will take anything from weeks to several months).
+All computations have been pre-run and summarised for this repository. To re-run analyses, check the instructions in the `analysis/run_analyses.R` script. *Note: for the paper we used a cluster of high-performance computers. Running the analyses on a laptop or workstation computer, depending on your system specs, will take anything from weeks to several months.*
 
 ### Figures
 Figures can be reproduced by running the individual scripts in the `figures/` folder. Alternatively, you can create all the figures by running the `figures/plot_all_figures.R` script.
