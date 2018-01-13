@@ -1,5 +1,5 @@
-require(dplyr)
-require(data.table)
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(dplyr, data.table)
 
 # Read the summer energy data (must have been precomputed by running the
 # "function/preprocess.R" script.)

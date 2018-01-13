@@ -1,9 +1,7 @@
 # Computes the obliquity to precession ratio of summer energy time series 
 # at specified latitudes and threshold values
-library(ggplot2)
-library(dplyr)
-library(dtplyr)
-library(data.table)
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(dplyr, dtplyr, data.table, multitaper, stats)
 
 latitudes = seq(-90, 90, 1)
 thresholds = seq(0, 500, 25)

@@ -1,6 +1,6 @@
-library(dplyr)
-library(tstools)
-library(data.table)
+if (!require("pacman")) install.packages("pacman")
+pacman::p_install_gh("kahaaga/tstools")
+pacman::p_load(dplyr, dtplyr, data.table)
 
 combos <- expand.grid(threshold = seq(0, 500, 25), 
                       latitude = seq(-90, 90, 1))

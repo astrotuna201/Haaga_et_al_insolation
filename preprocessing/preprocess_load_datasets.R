@@ -1,4 +1,6 @@
-require(dplyr)
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(dplyr)
+
 
 #' Load summer energy data for a given latitude and threshold.
 #' 

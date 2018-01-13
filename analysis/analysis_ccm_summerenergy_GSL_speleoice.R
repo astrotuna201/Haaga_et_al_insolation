@@ -40,14 +40,12 @@
 # routine from Sugihara et al. (2012), as well as functions to work with the 
 # CCM results. The  package also handles everything related to embedding 
 # dimension estimation and surrogate data generation. For details and 
-# references, see the package documentation for 'tstools'.
-devtools::install_github("kahaaga/tstools")
+# references, see the package documentation for 'tstools'. Also, load 
+# other packages.
 
-# Load the tstools package and other necessary packages.
-require(tstools)
-require(dplyr)
-require(data.table)
-require(pracma)
+if (!require("pacman")) install.packages("pacman")
+pacman::p_install_gh("kahaaga/tstools")
+pacman::p_load(dplyr, data.table, pracma)
 
 #########################
 # LOAD PRECOMPILED DATA

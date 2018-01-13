@@ -1,4 +1,5 @@
-require(R6)
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(R6)
 
 Dataset <- R6Class("Dataset",
                    public = list(
