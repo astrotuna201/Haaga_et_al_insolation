@@ -37,7 +37,7 @@ yax <- list(title = "Insolation intensity<br>(W/m<sup>2</sup>)",
             tickmode = "array", tickvals = seq(0, 500, 100))
 
 # Define colors
-col65N = viridisLite::viridis(n = 8, option = "C")[1]
+col65N = viridisLite::viridis(n = 8, option = "C")[3]
 col35N = viridisLite::viridis(n = 8, option = "C")[6]
 
 # Daily insolation plot for 65°N at 250 W/m^2 threshold
