@@ -6,7 +6,7 @@ This repository contains code to reproduce the analyses and figures for Haaga KA
 ### System requirements
 The easiest way to run the code in this repository is to use RStudio (https://www.rstudio.com/). If you clone or download the repository, an RStudio project file is included. Remember to clear all objects from the workspace in RStudio before you try to re-run any analyses or re-create plots. If you don't use the provided project file, remember to create a new RStudio project in the repository folder on your computer. Otherwise, relative paths in the scripts will not work.
 
-The code has been tested on OSX El Capitan version 10.11.6 and Linux Mint 18.2. The code may or may not run on Windows.
+The code has been tested on OSX El Capitan 10.11.6 and Linux Mint 18.2. The code may or may not run on Windows.
 
 ### Required packages
 All R packages required are loaded automatically when you run any of the scripts in this repository. 
